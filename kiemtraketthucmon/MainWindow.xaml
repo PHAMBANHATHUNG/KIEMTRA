@@ -7,7 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="NUT" Content="dong vat&#xD;&#xA;" HorizontalAlignment="Left" Margin="253,168,0,0" VerticalAlignment="Top" Width="247" Height="100" Click="NUT_Click"/>
+        <Button x:Name="NUT" Content="dong vat&#xD;&#xA;" HorizontalAlignment="Left" Margin="253,266,0,0" VerticalAlignment="Top" Width="247" Height="100" Click="NUT_Click"/>
+        <ListBox x:Name="lst" HorizontalAlignment="Left" Height="251" VerticalAlignment="Top" Width="679" Margin="58,12,0,0" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.232"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-2.957"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Button x:Name="CAT" Content="con meo" HorizontalAlignment="Left" Margin="129,325,0,0" VerticalAlignment="Top" Width="75" Click="CAT_Click"/>
+        <Button x:Name="DOG" Content="Con cho" HorizontalAlignment="Left" Margin="606,325,0,0" VerticalAlignment="Top" Width="75" Click="DOG_Click"/>
 
     </Grid>
 </Window>

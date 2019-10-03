@@ -32,7 +32,22 @@ namespace kiemtraketthucmon
             DongVat loai2 = new DongVat();
             loai2.Loai = "meo meo";
             loai2.Talk();
+        }
 
+        private void CAT_Click(object sender, RoutedEventArgs e)
+        {
+            List<DongVat> studentList = new List<DongVat>();
+            // Nhập tên sinh viên thứ nhất             
+            studentList.Add(new DongVat("MEO MEO.TOI LA MEO LONG MAU DO"));
+            foreach (DongVat st in studentList) { lst.Items.Add(st.Loai); }
+        }
+
+        private void DOG_Click(object sender, RoutedEventArgs e)
+        {
+            List<DongVat> studentList = new List<DongVat>();
+            // Nhập tên sinh viên thứ nhất             
+            studentList.Add(new DongVat("GAU GAU.TOI LA CHO LONG MAU VANG"));
+            foreach (DongVat st in studentList) { lst.Items.Add(st.Loai); }
         }
     }
 }
