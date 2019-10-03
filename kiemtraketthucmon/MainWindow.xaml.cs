@@ -24,5 +24,15 @@ namespace kiemtraketthucmon
         {
             InitializeComponent();
         }
+
+        private void NUT_Click(object sender, RoutedEventArgs e)
+        {
+            DongVat loai1 = new DongVat("gau gau");
+            loai1.Talk();
+            DongVat loai2 = new DongVat();
+            loai2.Loai = "meo meo";
+            loai2.Talk();
+
+        }
     }
 }
