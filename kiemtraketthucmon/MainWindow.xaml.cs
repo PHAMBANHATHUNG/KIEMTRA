@@ -30,7 +30,7 @@ namespace kiemtraketthucmon
             DongVat loai1 = new DongVat("gau gau");
             loai1.Talk();
             DongVat loai2 = new DongVat();
-            loai2.Loai = "meo meo";
+            loai2.Keu = "meo meo";
             loai2.Talk();
         }
 

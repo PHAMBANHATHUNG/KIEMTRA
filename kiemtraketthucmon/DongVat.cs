@@ -9,23 +9,24 @@ namespace kiemtraketthucmon
 {
     class DongVat
     {
-        public DongVat(string Keu)
+        public DongVat(string maulong)
         {
-            this.Loai = Keu;
+            this.Keu= maulong;
         }
         public DongVat()
         {
 
         }
-        private string loai;
+        private string keu;
 
-        public string Loai { get => loai; set => loai = value; }
+        public string Keu { get => keu; set => keu = value; }
+
         public virtual void Talk()
         {
-            if (Loai.Equals("gau gau"))
-                MessageBox.Show("Dog said " + this.Loai);
-            else if (Loai.Equals("meo meo"))
-                MessageBox.Show("Cat said " + this.Loai);
+            if (Keu.Equals("gau gau"))
+                MessageBox.Show("Dog said " + this.Keu);
+            else if (Keu.Equals("meo meo"))
+                MessageBox.Show("Cat said " + this.Keu);
         }
     }
 }
